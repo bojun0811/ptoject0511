@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void bubblesore(int t,int p )
+
+void bubblesore(int a,int y )
 {
 
-    int number[2] = {p,t};
+    int number[2] = {y,a};
     int i = 0, j = 0;
     int temp = 0;
 
@@ -18,8 +19,8 @@ void bubblesore(int t,int p )
             }
         }
     }
-printf("±Æ§Ç "); 
+     printf("±Æ§Ç"); 
     for( i = 0; i < 2; i++ ) {
-        printf("%d ", number[i]);
+        printf(" %d ", number[i]);
     }
 }
