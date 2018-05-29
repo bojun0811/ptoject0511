@@ -1,23 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <ctype.h>
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
-	void printcharacters(const char *sPtr);
+	void conver(char *sPtr);
+	
 int main(int argc, char *argv[]) {
-
-
-
- char string[]="My homework!";
-puts("The string is:");
-printcharacters(string);
-puts("");
-return 0;
+    char string[]="This is my homework2 !";
+    printf("The string before conversion is: %s \n",string) ;
+    conver(string);
+    printf("next : %s\n",string);
+	return 0;
 }
 
-void printcharacters(const char *sPtr)
-{ 
-  for(;*sPtr!= '\0';++sPtr)
-  {  printf("%c",*sPtr);
-  }
-
-}
+void conver(char *sPtr)
+{ while (*sPtr != '\0' )
+ {
+  *sPtr =toupper(*sPtr);
+  ++sPtr;
+ }
+ } 
